@@ -56,12 +56,12 @@ ALL_FEATURES = ['RMSFC_Voltage', 'Current_Phase1', 'Current_Phase2', 'Rotor_Spee
 # Model-specific configurations
 MODEL_CONFIGS = {
     "rf": {"step_size": 35, "window_size": 280 // len(ALL_FEATURES)},
-    "svm": {"step_size": 250, "window_size": 240 // len(ALL_FEATURES)},
+    "svm": {"step_size": 10, "window_size": 240 // len(ALL_FEATURES)},
     "mlp": {"step_size": 400, "window_size": 800 // len(ALL_FEATURES)},
     "lstm": {"step_size": 100, "window_size": 100},
     "cnn": {"step_size": 250, "window_size": 500},
     "transformer": {"step_size": 250, "window_size": 500},
-    "tcn": {"step_size": 250, "window_size": 100},
+    "tcn": {"step_size": 50, "window_size": 100},
     "fusion": {"step_size": 250, "window_size": 2000 // len(ALL_FEATURES)},
 }
 
