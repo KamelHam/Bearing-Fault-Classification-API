@@ -25,9 +25,8 @@ MODEL_PATHS = {
         "scaler": MODELS_DIR / "mlp_best_scaler_PROPER.pkl",
     },
     "lstm": {
-        "model": MODELS_DIR / "final_lstm_model.keras",
-        "scaler": MODELS_DIR / "lstm_scaler.pkl",
-
+        "model": MODELS_DIR / "final_lstm_model_PROPER.keras",
+        "scaler": MODELS_DIR / "lstm_scaler_PROPER.pkl",
 
     },
     "cnn": {
@@ -56,10 +55,10 @@ ALL_FEATURES = ['RMSFC_Voltage', 'Current_Phase1', 'Current_Phase2', 'Rotor_Spee
 
 # Model-specific configurations
 MODEL_CONFIGS = {
-    "rf": {"step_size": 250, "window_size": 2000// len(ALL_FEATURES)},
+    "rf": {"step_size": 35, "window_size": 280 // len(ALL_FEATURES)},
     "svm": {"step_size": 250, "window_size": 240 // len(ALL_FEATURES)},
     "mlp": {"step_size": 400, "window_size": 800 // len(ALL_FEATURES)},
-    "lstm": {"step_size": 250, "window_size": 500},
+    "lstm": {"step_size": 100, "window_size": 100},
     "cnn": {"step_size": 250, "window_size": 500},
     "transformer": {"step_size": 250, "window_size": 500},
     "tcn": {"step_size": 250, "window_size": 100},
