@@ -1,5 +1,5 @@
 # Bearing-Fault-Classification-API
-To validate the results obtained with the optimal configurations, the pre-trained models are deployed via an API in a prototype implementation. For the deployment evaluation of the pre-trained model, a RESTful API service was developed using the FastAPI framework. 
+To validate the results obtained with the optimal configurations "in https://www.nature.com/articles/s41598-026-57638-4", the pre-trained models are deployed via an API in a prototype implementation. For the deployment evaluation of the pre-trained model, a RESTful API service was developed using the FastAPI framework. 
 
 <img width="1333" height="887" alt="image" src="https://github.com/user-attachments/assets/5f2c1af3-f66f-485d-889e-24c915601895" />
 
